@@ -24,6 +24,7 @@
         <div class="collapsible-body">
             <strong>{{ task.cateogry }}</strong>
             <p>{{ task.task_description }}</p>
+            <p><a href="{{url_for('edit_task', task_id=task.id)}}" class="btn teal lighten-5 grey-text text-darken-4">Edit</a></p>
         </div>
     </li>
     {% endfor %}
